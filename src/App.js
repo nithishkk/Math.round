@@ -1,8 +1,14 @@
 import React from "react";
 import "./style.css";
-
+const data={
+  id:1,
+  name:'nithish',
+  account:12
+}
 function round(num, decimalPlaces = 0) {
+  console.log(num,'num')
   num = Math.round(num + "e" + decimalPlaces);
+  console.log(num,'num')
   return Number(num + "e" + -decimalPlaces);
 }
 export default function App() {
@@ -10,7 +16,7 @@ export default function App() {
     <div>
     
       <h1>Hello StackBlitz!</h1>
-      {round(12,3)}
+      {Math.round(data.account)}
       <p>Start editing to see some magic happen :)</p>
     </div>
   );
